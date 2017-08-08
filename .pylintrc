@@ -1,0 +1,6 @@
+[MESSAGES CONTROL]
+disable=C0111
+
+[MASTER]
+load-plugins=pylint_django
+max-line-length = 120
