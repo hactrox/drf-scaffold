@@ -2,7 +2,7 @@ import logging
 from rest_framework.request import Request
 
 
-log = logging.getLogger(__name__)  # pylint: disable=C0103
+log = logging.getLogger(__name__)
 
 
 def extract_request_info(request):

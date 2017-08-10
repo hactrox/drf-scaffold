@@ -26,11 +26,11 @@ from core.exceptions import custom404, custom500
 from .settings import base as base_settings
 
 
-handler404 = custom404  # pylint: disable=C0103
-handler500 = custom500  # pylint: disable=C0103
+handler404 = custom404
+handler500 = custom500
 
 
-schema_view = get_swagger_view(title='PROJECT_TO_RENAME API')  # pylint: disable=C0103
+schema_view = get_swagger_view(title='PROJECT_TO_RENAME API')
 
 
 urlpatterns = [

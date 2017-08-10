@@ -6,7 +6,7 @@ from django.http import JsonResponse
 from . import errors
 
 
-log = logging.getLogger(__name__)  # pylint: disable=C0103
+log = logging.getLogger(__name__)
 
 
 def custom404(request):

@@ -125,7 +125,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'PROJECT_TO_RENAME.urls'
+ROOT_URLCONF = 'config.urls'
 
 AUTHENTICATION_BACKENDS = [
     'core.backends.CustomBackend',
@@ -149,7 +149,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'PROJECT_TO_RENAME.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators

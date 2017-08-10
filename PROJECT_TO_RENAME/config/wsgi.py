@@ -8,9 +8,15 @@ https://docs.djangoproject.com/en/1.11/howto/deployment/wsgi/
 """
 
 import os
+import sys
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "PROJECT_TO_RENAME.settings")
 
-application = get_wsgi_application() #pylint: disable=C0103
+app_path = os.path.dirname(os.path.abspath(__file__)).replace('/config', '')
+sys.path.append(os.path.join(app_path, 'PROJECT_TO_RENAME'))
+
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings.production")
+
+application = get_wsgi_application()

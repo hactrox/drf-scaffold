@@ -27,7 +27,7 @@ CACHES = {
 }
 
 # Default configuration for global logger
-global_logger_conf = {  # pylint: disable=C0103
+global_logger_conf = {
     'handlers': ['console'],
     'level': 'DEBUG',
 }
