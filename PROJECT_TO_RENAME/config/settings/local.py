@@ -6,11 +6,11 @@ DEBUG = True
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'MYSQL_NAME',
-        'HOST': 'localhost',
-        'PORT': '13306',
-        'USER': 'MYSQL_USER',
-        'PASSWORD': 'MYSQL_PASSWORD'
+        'NAME': os.environ["DB_NAME"],
+        'HOST': os.environ["DB_HOST"],
+        'PORT': os.environ["DB_PORT"],
+        'USER': os.environ["DB_USER"],
+        'PASSWORD': os.environ["DB_PASSWORD"]
     }
 }
 
@@ -21,7 +21,7 @@ CACHES = {
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
             "COMPRESSOR": "django_redis.compressors.zlib.ZlibCompressor",
-            "PASSWORD": "PASSWORD_TO_CHANGE",
+            "PASSWORD": os.environ["REDIS_PASSWORD"],
         }
     }
 }

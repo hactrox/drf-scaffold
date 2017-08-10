@@ -1,0 +1,12 @@
+export DJANGO_SETTINGS_MODULE=config.settings.local
+export SECRET_KEY='5ua87c*@b@%%s_aat_#5($gmnd)-tjtj=$unmx)s^4h(_&#(v6'
+
+
+export DB_HOST='localhost'
+export DB_NAME='DBNAME'
+export DB_PORT='3306'
+export DB_USER='USER'
+export DB_PASSWORD='PASSWORD'
+
+
+export REDIS_PASSWORD='PASSWORD'
